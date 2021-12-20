@@ -5,6 +5,6 @@ mkdir /rclone
 curl $UserName >> /rclone/rclone.config
 rclone --config=/rclone/rclone.config
 rclone version
-rclone serve http $PassWord: --addr :$PORT --buffer-size 256M --dir-cache-time 12h --vfs-read-chunk-size 256M --vfs-read-chunk-size-limit 2G --vfs-cache-mode writes
+rclone --config=/rclone/rclone.config serve http $PassWord: --addr :$PORT --buffer-size 256M --dir-cache-time 12h --vfs-read-chunk-size 256M --vfs-read-chunk-size-limit 2G --vfs-cache-mode writes
 
 
